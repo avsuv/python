@@ -39,11 +39,11 @@ while True:
             unit = list()
             for j in range(i):
                 a = list(products[j])[1]
-                for el in a:
-                    name.append(a.get('Название'))
-                    price.append(a.get('Цена'))
-                    amount.append(a.get('Количество'))
-                    unit.append(a.get('Единицы'))
+                # for el in a:
+                name.append(a.get('Название'))
+                price.append(a.get('Цена'))
+                amount.append(a.get('Количество'))
+                unit.append(a.get('Единицы'))
                 # print(a)
                 characteristics.update({'Название': name, 'Цена': price, 'Количество': amount, 'Единиц': unit})
             print(characteristics)
