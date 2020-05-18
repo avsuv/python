@@ -1,18 +1,18 @@
 def my_input(i, my_type):
     while True:
         try:
-            x = my_type(input(f'Введите {i} число: '))
-            return x
+            a = my_type(input(f'Введите {i} число: '))
+            return a
         except:
             print('Вы ввели не число!')
 
-def my_func1(a, b):     # Первый способ
-    return a ** b
+def my_func1(x, y):     # Первый способ
+    return x ** y
 
-def my_func2(a, b):     # Второй способ
-    for _ in range(1, abs(b)):
-        a *= a
-    return 1 / a
+def my_func2(x, y):     # Второй способ
+    for _ in range(1, abs(y)):
+        x *= x
+    return 1 / x
 
 a = -1
 b = 1
