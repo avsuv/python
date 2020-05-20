@@ -1,7 +1,3 @@
-# 1. Реализовать скрипт, в котором должна быть предусмотрена функция расчета заработной платы сотрудника.
-# В расчете необходимо использовать формулу: (выработка в часах * ставка в час) + премия.
-# Для выполнения расчета для конкретных значений необходимо запускать скрипт с параметрами.
-
 from sys import argv
 
 
@@ -10,7 +6,10 @@ def wage(h, r, p):
 
 
 try:
-    hours, rate, premium = float(argv[1]), int(argv[2]), int(argv[3])
-    print(wage(hours, rate, premium))
+    hours, rate, premium = float(argv[1]), float(argv[2]), float(argv[3])
+    print(f'Выработка: {hours}\n'
+          f'Ставка: {rate}\n'
+          f'Премия: {premium}')
+    print(f'З.п. сотрудника: {wage(hours, rate, premium)}')
 except:
     print('Неверно введены аргументы!')
