@@ -12,7 +12,6 @@ for el in numbers:
         el[0] = 'Три'
     elif el[0] == 'Four':
         el[0] = 'Четыре'
-print(numbers)
 
 with open('2_new.txt', 'w', encoding='utf-8') as file:
     for line in numbers:
