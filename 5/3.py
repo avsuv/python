@@ -16,4 +16,4 @@ for i, el in enumerate(staff_min):
 ave_salary = 0
 for el in staff:
     ave_salary += float(el[1])
-print(f'Средняя зарплата всех сотрудников: {ave_salary / len(staff)}')
+print(f'Средняя зарплата всех сотрудников: {(ave_salary / len(staff)):.2f}')
