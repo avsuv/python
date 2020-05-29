@@ -63,3 +63,4 @@ print()
 pc = PoliceCar(100, 'Черный', 'Octavia')
 if pc.is_police == True:
     print(pc.name, ' - полицейская!')
+
