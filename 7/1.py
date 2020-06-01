@@ -22,9 +22,8 @@ class Matrix:
         for i in range(h2):     # Потом результат складываем со второй матрицей
             for j in range(l2):
                 matrix_new[i][j] += other.matrix_in[i][j]
-        matrix_rez = Matrix(matrix_new)  # Тут небольшой костыль, чтоб корректно отобразить результат
-        return matrix_rez
-
+        return Matrix(matrix_new)   # Создаем новый объект Matrix, для корректного отображения - не знаю,
+                                    # насколько корректно так делать
 
 matr_1 = Matrix([[31, 22],
                  [37, 43],
